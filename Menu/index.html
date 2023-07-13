@@ -18,23 +18,20 @@
 	</div>
 	<div class="content">
 			<ul>
+				<div class="menu-lista-scritte">
 				<a class="men" href="./PDF/PRIMI.pdf" target="_blank">MENU TURISTICI</a>
 				<a class="ant" onclick="window.open('file:./PDF/ANTIPASTI.pdf') target="_blank"; return true;">ANTIPASTI</a>
 				<a class="pri" onclick="window.open('file:./PDF/PRIMI.pdf'); return true;">PRIMI</a>
 				<a class="sec" onclick="window.open('file:./PDF/SECONDI.pdf'); return true;">SECONDI</a>
 				<a class="con" onclick="window.open('file:./PDF/CONTORNI.pdf'); return true;">CONTORNI</a>
 				<a class="alt" onclick="window.open('file:./PDF/ALTRE INFO.pdf'); return true;">ALTRE INFO</a>
+				</div>
 			</ul>
 		</div>
 	<script>
 		const langEl = document.querySelector('.langWrap');
 		const link = document.querySelectorAll('a');
-		const menEl = document.querySelector('.men');
-		const antEl = document.querySelector('.ant');
-		const priEl = document.querySelector('.pri');
-		const secEl = document.querySelector('.sec');
-		const conEl = document.querySelector('.con');
-		const altEl = document.querySelector('.alt');
+
 
 		link.forEach(el => {
 			el.addEventListener('click', () => {
