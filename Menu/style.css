@@ -67,11 +67,11 @@ li
 {
   background-color: #333;
 	display: block;
-	width: 30%;
+	width: 35%;
 	margin-left: 5px;
-	padding: 30px;
+	padding: 10px;
 	text-transform: capitalize;
-	font-size: 20px;
+	font-size: 17px;
 	font-family: Monospace;
 	transition: .1s;
 	transition-timing-function: cubic-bezier(.51,.23,.74,1.52);
