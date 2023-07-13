@@ -10,7 +10,7 @@ ul
 {
 	background-image: url("./Foto/sfondo.jpg");
 	background-repeat: none;
-  	background-size: auto;
+  	background-size: 300%;
 }
 
 .langWrap
@@ -68,7 +68,7 @@ li
   background-color: #333;
 	display: block;
 	margin-left: 5px;
-	width: 50px;
+	width: 100px;
 	padding: 25px;
 	text-transform: capitalize;
 	font-size: 17px;
