@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+
+<html lang="it">
+	<link href="style.css" rel="stylesheet" type="text/css"/>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>Menu</title>
+	</head>
+	<body class="content">
+	<div class="container">
+		<div class="langWrap">
+			<a href="#" language='italiano' class="active">Italiano</a>
+			<a href="#" language='english'>English</a>
+			<a href="#" language='deutsch'>Deutsch</a>
+		</div>
+	</div>
+	<div class="content">
+			<ul>
+				<li class="men" onclick="window.open('file:./PDF/MENU TURISTICI.pdf'); return true;">MENU TURISTICI</li>
+				<li class="ant" onclick="window.open('file:./PDF/ANTIPASTI.pdf'); return true;">ANTIPASTI</li>
+				<li class="pri" onclick="window.open('file:./PDF/PRIMI.pdf'); return true;">PRIMI</li>
+				<li class="sec" onclick="window.open('file:./PDF/SECONDI.pdf'); return true;">SECONDI</li>
+				<li class="con" onclick="window.open('file:./PDF/CONTORNI.pdf'); return true;">CONTORNI</li>
+				<li class="alt" onclick="window.open('file:./PDF/ALTRE INFO.pdf'); return true;">ALTRE INFO</li>
+			</ul>
+		</div>
+	<script>
+		const langEl = document.querySelector('.langWrap');
+		const link = document.querySelectorAll('a');
+		const menEl = document.querySelector('.men');
+		const antEl = document.querySelector('.ant');
+		const priEl = document.querySelector('.pri');
+		const secEl = document.querySelector('.sec');
+		const conEl = document.querySelector('.con');
+		const altEl = document.querySelector('.alt');
+
+		link.forEach(el => {
+			el.addEventListener('click', () => {
+				langEl.querySelector('.active').classList.remove('active');
+				el.classList.add('active');
+
+				const attr = el.getAttribute('language');
+
+				menEl.textContent = data[attr].men;
+				antEl.textContent = data[attr].ant;
+				priEl.textContent = data[attr].pri;
+				secEl.textContent = data[attr].sec;
+				conEl.textContent = data[attr].con;
+				altEl.textContent = data[attr].alt;
+			});
+		});
+
+		var data = {
+			  "italiano":
+			  {
+			    "men": "MENU TURISTICI",
+					"ant": "ANTIPASTI",
+					"pri": "PRIMI",
+					"sec": "SECONDI",
+					"con": "CONTORNI",
+					"alt": "ALTRE INFO"
+				},
+				"english":
+			  {
+			    "men": "TOURISTIC MENU",
+			    "ant": "HORS D'OEUVRE",
+					"pri": "FIRST COURSE",
+					"sec": "SECOND COURSE",
+					"con": "GARNISH",
+					"alt": "MORE INFO"
+
+			  },
+			  "deutsch":
+			  {
+			    "men": "TURISTISCHE MENU",
+			    "ant": "KALTE VORSPEISEN",
+					"pri": "VORSPEISEN",
+					"sec": "HAUPTGERICHTE",
+					"con": "GARNISH",
+					"alt": "MEHR INFO"
+			  }
+			}
+	</script>
+	</body>
+	</link>
+</html>

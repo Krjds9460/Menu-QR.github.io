@@ -1,0 +1,87 @@
+@import url(https://necolas.github.io/normalize.css/8.0.1/normalize.css);
+
+ul
+{
+	padding: 30px;
+	margin: 0px;
+}
+
+.content
+{
+	background-image: url("./Foto/sfondo.jpg");
+	background-repeat: repeat;
+  background-size: 100%;
+}
+
+.langWrap
+{
+	text-decoration-style: capitalize;
+	display: inline-grid;
+	padding: 5px;
+	float: right;
+	font-size: 20px;
+	font-family: Monospace;
+	margin: 5px;
+}
+
+a
+{
+	color: #ffca28;
+  background-color: #333;
+	width: 90%;
+	margin: 0px;
+	padding: 7px;
+}
+
+a.active
+{
+  color: #ff8000;
+}
+
+.men
+{
+	color: #ffca25
+}
+.ant
+{
+	color: #ffca25
+}
+.pri
+{
+	color: #ffca25
+}
+.sec
+{
+	color: #ffca25
+}
+.con
+{
+	color: #ffca25
+}
+.alt
+{
+	color: #ffca25
+}
+
+li
+{
+  background-color: #333;
+	display: block;
+	width: 15%;
+	margin-left: 30px;
+	padding: 30px;
+	text-transform: capitalize;
+	font-size: 30px;
+	font-family: Monospace;
+	transition: .1s;
+	transition-timing-function: cubic-bezier(.51,.23,.74,1.52);
+}
+
+li:hover
+{
+	border-bottom: 4px solid #ff8000;
+	margin: 5px;
+	color: #ff8000;
+	transition: .1s;
+	transition-timing-function: cubic-bezier(.51,.23,.74,1.52);
+}
